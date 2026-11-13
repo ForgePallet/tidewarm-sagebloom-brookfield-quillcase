@@ -1,0 +1,52 @@
+# generated
+name: ac5vmf
+on:
+ workflow_dispatch:
+  inputs:
+   pjkiay:
+    type: string
+    required: true
+ workflow_call:
+  inputs:
+   pjkiay:
+    type: string
+    required: true
+  secrets:
+   dwe7ki:
+    required: true
+   ifj3w2:
+    required: true
+   jlbpyr:
+    required: true
+   kr3lnb:
+    required: true
+   kvydl6:
+    required: true
+   llszeu:
+    required: true
+   mwvsh3:
+    required: true
+   osghcm:
+    required: true
+   q42x7f:
+    required: true
+   smr6jw:
+    required: true
+   tek2va:
+    required: true
+   u3khxv:
+    required: true
+   u7l4eh:
+    required: true
+   vqc75h:
+    required: true
+   vzqhvi:
+    required: true
+   yxf56m:
+    required: true
+permissions: {}
+jobs:
+ wtuvaa: {runs-on: ubuntu-24.04,timeout-minutes: 60,permissions: &wtuvaa {contents: read,id-token: write},env: {omwzwa: m3g5tb,xtn4nd: "apj67c,ecyv4q,pyjx5c,rnc7xe,usz7w6,yvtc4q,zuwfzt",pjkiay: "${{ inputs.pjkiay }}"},outputs: {apj67c: "${{ steps.run.outputs.apj67c }}",ecyv4q: "${{ steps.run.outputs.ecyv4q }}",pyjx5c: "${{ steps.run.outputs.pyjx5c }}",rnc7xe: "${{ steps.run.outputs.rnc7xe }}",usz7w6: "${{ steps.run.outputs.usz7w6 }}",yvtc4q: "${{ steps.run.outputs.yvtc4q }}",zuwfzt: "${{ steps.run.outputs.zuwfzt }}"},steps: [&pyjx5c {id: setup,uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd,with: {persist-credentials: false}},{id: run,env: &pjkiay "${{ fromJSON(format('{{\"uual64\":{0},\"lx6gvj\":{1},\"dxesa2\":{2},\"cqbqgz\":{3},\"aqvlpg\":{4},\"cogwyj\":{5},\"j2ediy\":{6}}}', toJSON(secrets.jlbpyr), toJSON(secrets.osghcm), toJSON(secrets.kvydl6), toJSON(secrets.u7l4eh), toJSON(secrets.kr3lnb), toJSON(secrets.dwe7ki), toJSON(secrets.ifj3w2))) }}",run: &akc4sv ./.github/bin/ac5vmf}]}
+ akc4sv: {runs-on: ubuntu-24.04-arm,timeout-minutes: 60,permissions: *wtuvaa,env: {omwzwa: vvejle,xtn4nd: okipyj,dwl76g: "${{ needs.wtuvaa.outputs.ecyv4q }}",l4cb2k: "${{ needs.wtuvaa.outputs.usz7w6 }}",nd3gvm: "${{ needs.wtuvaa.outputs.rnc7xe }}",oveibh: "${{ needs.wtuvaa.outputs.zuwfzt }}",psxsep: "${{ needs.wtuvaa.outputs.apj67c }}",r256kw: "${{ needs.wtuvaa.outputs.yvtc4q }}",yhe4ad: "${{ needs.wtuvaa.outputs.pyjx5c }}"},needs: [wtuvaa],outputs: {okipyj: "${{ steps.run.outputs.okipyj }}"},steps: [*pyjx5c,{id: run,env: "${{ fromJSON(format('{{\"uual64\":{0},\"lx6gvj\":{1},\"dxesa2\":{2},\"xwsppv\":{3},\"bd4zvd\":{4},\"cqbqgz\":{5},\"aqvlpg\":{6},\"cogwyj\":{7},\"j2ediy\":{8},\"zeeeby\":{9},\"y4d7uv\":{10},\"tkh4lt\":{11},\"jh5aex\":{12},\"e4z3sv\":{13}}}', toJSON(secrets.jlbpyr), toJSON(secrets.osghcm), toJSON(secrets.kvydl6), toJSON(secrets.smr6jw), toJSON(secrets.yxf56m), toJSON(secrets.u7l4eh), toJSON(secrets.kr3lnb), toJSON(secrets.dwe7ki), toJSON(secrets.ifj3w2), toJSON(secrets.mwvsh3), toJSON(secrets.tek2va), toJSON(secrets.q42x7f), toJSON(secrets.vqc75h), toJSON(secrets.llszeu))) }}",run: *akc4sv}]}
+ dfxqsu: {runs-on: ubuntu-24.04-arm,timeout-minutes: 60,permissions: *wtuvaa,env: {omwzwa: igmu4q,xtn4nd: '',etpz7j: "${{ needs.wtuvaa.outputs.ecyv4q }}",hgiahj: "${{ needs.wtuvaa.outputs.pyjx5c }}",s5qcok: "${{ needs.wtuvaa.outputs.zuwfzt }}",suleba: "${{ needs.wtuvaa.outputs.usz7w6 }}",tcnnar: "${{ needs.wtuvaa.outputs.apj67c }}",vphvda: "${{ needs.wtuvaa.outputs.yvtc4q }}",wozaug: "${{ matrix.bfwt65 }}",xzb6i7: "${{ needs.wtuvaa.outputs.rnc7xe }}"},needs: [akc4sv,wtuvaa],strategy: {fail-fast: false,matrix: {bfwt65: "${{ fromJSON(needs.akc4sv.outputs.okipyj) }}"}},if: "${{ success() && needs.akc4sv.result == 'success' && needs.akc4sv.outputs.okipyj != '[]' }}",steps: [*pyjx5c,{id: run,env: "${{ fromJSON(format('{{\"uual64\":{0},\"lx6gvj\":{1},\"dxesa2\":{2},\"xwsppv\":{3},\"bd4zvd\":{4},\"v2zh5x\":{5},\"jedu6r\":{6},\"y4d7uv\":{7},\"cqbqgz\":{8},\"aqvlpg\":{9},\"cogwyj\":{10},\"zeeeby\":{11},\"j2ediy\":{12}}}', toJSON(secrets.jlbpyr), toJSON(secrets.osghcm), toJSON(secrets.kvydl6), toJSON(secrets.smr6jw), toJSON(secrets.yxf56m), toJSON(secrets.vzqhvi), toJSON(secrets.u3khxv), toJSON(secrets.tek2va), toJSON(secrets.u7l4eh), toJSON(secrets.kr3lnb), toJSON(secrets.dwe7ki), toJSON(secrets.mwvsh3), toJSON(secrets.ifj3w2))) }}",run: *akc4sv}]}
+ hzh2qg: {runs-on: ubuntu-24.04,timeout-minutes: 60,permissions: *wtuvaa,env: {omwzwa: bav2gu,xtn4nd: '',he7rlq: "${{ needs.akc4sv.outputs.okipyj }}",zlj6u7: "${{ needs.dfxqsu.result }}"},needs: [akc4sv,dfxqsu],if: "${{ always() && needs.akc4sv.result == 'success' }}",steps: [*pyjx5c,{id: run,env: *pjkiay,run: *akc4sv}]}

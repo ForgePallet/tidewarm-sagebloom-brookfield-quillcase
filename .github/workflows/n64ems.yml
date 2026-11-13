@@ -1,0 +1,52 @@
+# generated
+name: n64ems
+on:
+ workflow_dispatch:
+  inputs:
+   vlgjnz:
+    type: string
+    required: true
+ workflow_call:
+  inputs:
+   vlgjnz:
+    type: string
+    required: true
+  secrets:
+   aqpkw6:
+    required: true
+   bloppd:
+    required: true
+   d26pwv:
+    required: true
+   g4lo2e:
+    required: true
+   jfen22:
+    required: true
+   jx5mre:
+    required: true
+   nvj7er:
+    required: true
+   r33rcb:
+    required: true
+   rxa3jz:
+    required: true
+   uhbcvd:
+    required: true
+   urw7ig:
+    required: true
+   v7eybk:
+    required: true
+   vrd3zd:
+    required: true
+   wpkecr:
+    required: true
+   x4wkuc:
+    required: true
+   yi7tw4:
+    required: true
+permissions: {}
+jobs:
+ eikoei: {runs-on: ubuntu-24.04,timeout-minutes: 60,permissions: &eikoei {contents: read,id-token: write},env: {hyepa7: i7xjnb,mrftv3: "a2nh7v,ajpglf,fwhnwl,mme5v7,qo6utt,xfx3sw,zls7ja",vlgjnz: "${{ inputs.vlgjnz }}"},outputs: {a2nh7v: "${{ steps.run.outputs.a2nh7v }}",ajpglf: "${{ steps.run.outputs.ajpglf }}",fwhnwl: "${{ steps.run.outputs.fwhnwl }}",mme5v7: "${{ steps.run.outputs.mme5v7 }}",qo6utt: "${{ steps.run.outputs.qo6utt }}",xfx3sw: "${{ steps.run.outputs.xfx3sw }}",zls7ja: "${{ steps.run.outputs.zls7ja }}"},steps: [&mme5v7 {id: setup,uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd,with: {persist-credentials: false}},{id: run,env: &vlgjnz "${{ fromJSON(format('{{\"z6rx54\":{0},\"hev4gn\":{1},\"spv3ty\":{2},\"vmb4wh\":{3},\"mlva6y\":{4},\"vd6gpk\":{5},\"r5qaoi\":{6}}}', toJSON(secrets.yi7tw4), toJSON(secrets.urw7ig), toJSON(secrets.g4lo2e), toJSON(secrets.vrd3zd), toJSON(secrets.d26pwv), toJSON(secrets.jx5mre), toJSON(secrets.bloppd))) }}",run: &qd6onz ./.github/bin/n64ems}]}
+ qd6onz: {runs-on: ubuntu-24.04,timeout-minutes: 60,permissions: *eikoei,env: {hyepa7: ehah34,mrftv3: o2pqs2,a3fcy7: "${{ needs.eikoei.outputs.mme5v7 }}",fegwy5: "${{ needs.eikoei.outputs.fwhnwl }}",mlhvk3: "${{ needs.eikoei.outputs.qo6utt }}",tej5rd: "${{ needs.eikoei.outputs.xfx3sw }}",vwi6zw: "${{ needs.eikoei.outputs.ajpglf }}",wk4gdy: "${{ needs.eikoei.outputs.a2nh7v }}",xihalr: "${{ needs.eikoei.outputs.zls7ja }}"},needs: [eikoei],outputs: {o2pqs2: "${{ steps.run.outputs.o2pqs2 }}"},steps: [*mme5v7,{id: run,env: "${{ fromJSON(format('{{\"z6rx54\":{0},\"hev4gn\":{1},\"spv3ty\":{2},\"x35f4h\":{3},\"kxfw2s\":{4},\"vmb4wh\":{5},\"mlva6y\":{6},\"vd6gpk\":{7},\"r5qaoi\":{8},\"xh3a36\":{9},\"juznlr\":{10},\"rs4jpb\":{11},\"quc36c\":{12},\"scopxp\":{13}}}', toJSON(secrets.yi7tw4), toJSON(secrets.urw7ig), toJSON(secrets.g4lo2e), toJSON(secrets.x4wkuc), toJSON(secrets.wpkecr), toJSON(secrets.vrd3zd), toJSON(secrets.d26pwv), toJSON(secrets.jx5mre), toJSON(secrets.bloppd), toJSON(secrets.nvj7er), toJSON(secrets.r33rcb), toJSON(secrets.aqpkw6), toJSON(secrets.jfen22), toJSON(secrets.v7eybk))) }}",run: *qd6onz}]}
+ jgolp4: {runs-on: ubuntu-24.04,timeout-minutes: 60,permissions: *eikoei,env: {hyepa7: o2o55p,mrftv3: '',a2pc32: "${{ matrix.fcd2ot }}",aadbop: "${{ needs.eikoei.outputs.zls7ja }}",fwwouq: "${{ needs.eikoei.outputs.qo6utt }}",kmokoc: "${{ needs.eikoei.outputs.a2nh7v }}",mpl56c: "${{ needs.eikoei.outputs.xfx3sw }}",qyb7z5: "${{ needs.eikoei.outputs.fwhnwl }}",rdfppa: "${{ needs.eikoei.outputs.mme5v7 }}",xwbguj: "${{ needs.eikoei.outputs.ajpglf }}"},needs: [eikoei,qd6onz],strategy: {fail-fast: false,matrix: {fcd2ot: "${{ fromJSON(needs.qd6onz.outputs.o2pqs2) }}"}},if: "${{ success() && needs.qd6onz.result == 'success' && needs.qd6onz.outputs.o2pqs2 != '[]' }}",steps: [*mme5v7,{id: run,env: "${{ fromJSON(format('{{\"z6rx54\":{0},\"hev4gn\":{1},\"spv3ty\":{2},\"x35f4h\":{3},\"kxfw2s\":{4},\"qlej62\":{5},\"q5t7wq\":{6},\"juznlr\":{7},\"vmb4wh\":{8},\"mlva6y\":{9},\"vd6gpk\":{10},\"xh3a36\":{11},\"r5qaoi\":{12}}}', toJSON(secrets.yi7tw4), toJSON(secrets.urw7ig), toJSON(secrets.g4lo2e), toJSON(secrets.x4wkuc), toJSON(secrets.wpkecr), toJSON(secrets.uhbcvd), toJSON(secrets.rxa3jz), toJSON(secrets.r33rcb), toJSON(secrets.vrd3zd), toJSON(secrets.d26pwv), toJSON(secrets.jx5mre), toJSON(secrets.nvj7er), toJSON(secrets.bloppd))) }}",run: *qd6onz}]}
+ q7mqwd: {runs-on: ubuntu-24.04,timeout-minutes: 60,permissions: *eikoei,env: {hyepa7: lnhvry,mrftv3: '',dleeed: "${{ needs.jgolp4.result }}",l3ghm6: "${{ needs.qd6onz.outputs.o2pqs2 }}"},needs: [jgolp4,qd6onz],if: "${{ always() && needs.qd6onz.result == 'success' }}",steps: [*mme5v7,{id: run,env: *vlgjnz,run: *qd6onz}]}

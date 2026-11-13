@@ -1,0 +1,53 @@
+# generated
+name: wcwtyz
+on:
+ workflow_dispatch:
+  inputs:
+   ggu5wk:
+    type: string
+    required: true
+ workflow_call:
+  inputs:
+   ggu5wk:
+    type: string
+    required: true
+  secrets:
+   g5gja7:
+    required: true
+   gkmvmn:
+    required: true
+   gqndyr:
+    required: true
+   jeodk7:
+    required: true
+   m7yssf:
+    required: true
+   mbdsbi:
+    required: true
+   o5hizl:
+    required: true
+   odvmto:
+    required: true
+   ssbsfb:
+    required: true
+   suq6yn:
+    required: true
+   szi4pi:
+    required: true
+   t52imf:
+    required: true
+   tkbpp6:
+    required: true
+   tnrq4h:
+    required: true
+   v3n4hw:
+    required: true
+   zqhi3s:
+    required: true
+permissions: {}
+jobs:
+ qtoe22: {runs-on: ubuntu-24.04,timeout-minutes: 60,permissions: &qtoe22 {contents: read,id-token: write},env: {kvlz77: i2fbjg,gfx37q: "e6zf6d,j5qamq,j6s64i,n7idsq,nd3t4m,ysehrg",ggu5wk: "${{ inputs.ggu5wk }}"},outputs: {e6zf6d: "${{ steps.run.outputs.e6zf6d }}",j5qamq: "${{ steps.run.outputs.j5qamq }}",j6s64i: "${{ steps.run.outputs.j6s64i }}",n7idsq: "${{ steps.run.outputs.n7idsq }}",nd3t4m: "${{ steps.run.outputs.nd3t4m }}",ysehrg: "${{ steps.run.outputs.ysehrg }}"},steps: [&n7idsq {id: setup,uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd,with: {persist-credentials: false}},{id: run,env: "${{ fromJSON(format('{{\"mmyhkk\":{0},\"yv2eko\":{1},\"lcbg64\":{2},\"avp3ng\":{3},\"bfonij\":{4},\"q6fuma\":{5},\"dbf3yq\":{6}}}', toJSON(secrets.gkmvmn), toJSON(secrets.szi4pi), toJSON(secrets.odvmto), toJSON(secrets.tkbpp6), toJSON(secrets.m7yssf), toJSON(secrets.mbdsbi), toJSON(secrets.ssbsfb))) }}",run: &msetik ./.github/bin/wcwtyz}]}
+ msetik: {runs-on: ubuntu-24.04,timeout-minutes: 60,permissions: *qtoe22,env: {kvlz77: rpw2ey,gfx37q: '',nx6hzt: "${{ needs.qtoe22.outputs.n7idsq }}"},needs: &rpw2ey [qtoe22],steps: [*n7idsq,{id: run,env: &nx6hzt "${{ fromJSON(format('{{\"mmyhkk\":{0},\"yv2eko\":{1},\"lcbg64\":{2},\"iorcda\":{3},\"aih45d\":{4},\"rrzll4\":{5},\"c4srrg\":{6},\"avp3ng\":{7},\"bfonij\":{8},\"q6fuma\":{9},\"rulntc\":{10},\"u3sfcl\":{11},\"hxnx2l\":{12},\"dbf3yq\":{13},\"hh6ifs\":{14},\"nq5msm\":{15}}}', toJSON(secrets.gkmvmn), toJSON(secrets.szi4pi), toJSON(secrets.odvmto), toJSON(secrets.zqhi3s), toJSON(secrets.jeodk7), toJSON(secrets.suq6yn), toJSON(secrets.g5gja7), toJSON(secrets.tkbpp6), toJSON(secrets.m7yssf), toJSON(secrets.mbdsbi), toJSON(secrets.t52imf), toJSON(secrets.tnrq4h), toJSON(secrets.gqndyr), toJSON(secrets.ssbsfb), toJSON(secrets.v3n4hw), toJSON(secrets.o5hizl))) }}",run: *msetik}]}
+ kggwqy: {runs-on: ubuntu-24.04,timeout-minutes: 60,permissions: *qtoe22,env: {kvlz77: d7x6dy,gfx37q: ecrpqd,npctfq: "${{ needs.qtoe22.outputs.n7idsq }}",pezola: "${{ needs.qtoe22.outputs.j6s64i }}",yeynrc: "${{ needs.qtoe22.outputs.j5qamq }}"},needs: *rpw2ey,outputs: {ecrpqd: "${{ steps.run.outputs.ecrpqd }}"},steps: [*n7idsq,{id: run,env: "${{ fromJSON(format('{{\"mmyhkk\":{0},\"yv2eko\":{1},\"lcbg64\":{2},\"iorcda\":{3},\"aih45d\":{4},\"avp3ng\":{5},\"bfonij\":{6},\"q6fuma\":{7},\"dbf3yq\":{8}}}', toJSON(secrets.gkmvmn), toJSON(secrets.szi4pi), toJSON(secrets.odvmto), toJSON(secrets.zqhi3s), toJSON(secrets.jeodk7), toJSON(secrets.tkbpp6), toJSON(secrets.m7yssf), toJSON(secrets.mbdsbi), toJSON(secrets.ssbsfb))) }}",run: *msetik}]}
+ udnfto: {runs-on: ubuntu-24.04,timeout-minutes: 60,permissions: *qtoe22,env: {kvlz77: g7z3cf,gfx37q: '',aolowd: "${{ needs.qtoe22.outputs.e6zf6d }}",iitm5g: "${{ needs.qtoe22.outputs.nd3t4m }}",pjsz6c: "${{ needs.qtoe22.outputs.ysehrg }}",qj6kth: "${{ needs.qtoe22.outputs.n7idsq }}",qw2gdf: "${{ needs.qtoe22.outputs.j6s64i }}",ukcjoz: "${{ needs.qtoe22.outputs.j5qamq }}",yl7hnj: "${{ matrix.omimdh }}"},needs: [kggwqy,msetik,qtoe22],strategy: {fail-fast: false,matrix: {omimdh: "${{ fromJSON(needs.kggwqy.outputs.ecrpqd) }}"}},if: "${{ success() && needs.kggwqy.result == 'success' && needs.kggwqy.outputs.ecrpqd != '[]' }}",steps: [*n7idsq,{id: run,env: *nx6hzt,run: *msetik}]}
+ o76lfm: {runs-on: ubuntu-24.04,timeout-minutes: 60,permissions: *qtoe22,env: {kvlz77: fkbdtb,gfx37q: '',dfmkcn: "${{ needs.udnfto.result }}",fbujdf: "${{ needs.qtoe22.outputs.ysehrg }}",hrs56p: "${{ needs.qtoe22.outputs.j6s64i }}",o3v3jf: "${{ needs.msetik.result }}",rdmcuk: "${{ needs.qtoe22.outputs.n7idsq }}",yyx6vd: "${{ needs.qtoe22.outputs.j5qamq }}"},needs: [msetik,qtoe22,udnfto],if: "${{ always() && needs.qtoe22.result == 'success' }}",steps: [*n7idsq,{id: run,env: *nx6hzt,run: *msetik}]}
